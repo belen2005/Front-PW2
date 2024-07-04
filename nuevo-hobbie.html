@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Hobby</title>
+    <link rel="icon" href="img/New entries-cuate.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="row" style="--bs-gutter-x: 0 !important;">
+            <div class="col-md-6">
+                <div class="min-vh-100 d-flex">
+                    <div class="side-image d-flex justify-content-center position-relative">
+                        <a href="index.html" class=" rounded-pill px-4 mt-3 position-absolute top-0 start-0">
+                            <i class="bi bi-arrow-left me-2"></i>
+                            Regresar
+                        </a>
+                        <img src="img/Team work-bro.png" alt="" class="w-75 h-100 object-fit-contain">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card3 border-0  vh-100">
+                    <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                        <h2 class="text-muted">Nuevo Hobbie</h2>
+                    </div>
+                    <div class="card-body p-5">
+                        <form id="nuevo-hobbie-form">
+                            <div class="form-group">
+                                <label for="nuevo-titulo" class="text-muted">Título:</label>
+                                <input type="text" class="form-control border-0 border-bottom border-muted bg-light"
+                                    id="nuevo-titulo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nueva-descripcion" class="text-muted">Descripción:</label>
+                                <textarea class="form-control border-0 border-bottom border-muted bg-light"
+                                    id="nueva-descripcion" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="como_empezar" class="text-muted">Cómo Empezar:</label>
+                                <input type="text" class="form-control border-0 border-bottom border-muted bg-light"
+                                    id="como_empezar" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="equipo_necesario" class="text-muted">Equipo Necesario:</label>
+                                <input type="text" class="form-control border-0 border-bottom border-muted bg-light"
+                                    id="equipo_necesario" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nuevo-beneficio" class="text-muted">Beneficio:</label>
+                                <input type="text" class="form-control border-0 border-bottom border-muted bg-light"
+                                    id="nuevo-beneficio" required>
+                            </div>
+                            <input type="button" class="mt-3 rounded-pill px-4" id="boton-nuevo-hobbie" value="Crear" />
+                        </form>
+                        <div id="nuevo-hobbie-error" class="error"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/nuevo-hobbie.js' type="module"></script>
+</body>
+
+</html>
