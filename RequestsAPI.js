@@ -24,7 +24,7 @@ const manejarErrores = (error = new Error("Error desconocido")) => {
 };
 
 export class RequestsAPI {
-  static urlBaseBackend = "https://backend-pw2-1.onrender.com/";
+  static urlBaseBackend = "https://backend-pw2-1.onrender.com";
 
   static login(email, password) {
     const body = JSON.stringify({ email, password });
