@@ -24,3 +24,12 @@ botonLogin.addEventListener("click", () => {
       imprimir("form-login-error", "Email o contraseña incorrecto.");
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const registerLink = document.querySelector('.signin a');
+
+  registerLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'registrar.html';
+  });
+});
